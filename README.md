@@ -22,9 +22,8 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
   - predict the score
   - importance of the features
   - rank features
-- What types of holidays are people interested in? 
-  - Classification?
-  - Can a recommendation be created from the reviews?
+- What types of listings are people advertising? 
+  - Could this be a classification?
 - What is the average price for the different location? 
   - what would affect this price? 
   - rank features by importance
