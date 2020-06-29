@@ -18,15 +18,14 @@ The purpose of this project is to understand and improve my knowledge of the CRI
 
 ## Project Description
 I am currently exploring the London Airbnb data for 2020 and I have the following business questions:
-- What features assist in obtaining a good review score? 
-  - predict the score
-  - importance of the features
-  - rank features
-- What types of listings are people advertising? 
-  - Could this be a classification?
+**Question 1**
 - What is the average price for the different location? 
-  - what would affect this price? 
-  - rank features by importance
+**Question 2**
+- What types of amenities are included in a listing? 
+**Question 3**
+- What features assist in obtaining a good review score? 
+- predict the score
+- importance of the features, rank features
 
 In turn I will create a web blog to show my findings.
 
