@@ -23,7 +23,7 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
 - What is the average price for the different location? 
 
 **Question 2**
-- What types of amenities are included in a listing? 
+- What types of verifications are hosts using? How long did it take them to respond?
 
 **Question 3**
 - What features assist in obtaining a good review score? 
