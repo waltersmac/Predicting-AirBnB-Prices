@@ -26,7 +26,7 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
 - What types of verifications are hosts using? How long did it take them to respond?
 
 **Question 3**
-- What features assist in obtaining a good review score? 
+- What features assist in predicting a price for any listing? 
   - Is it possible to predict the score
   - What are the importance of the features? Could the features be ranked?
 
