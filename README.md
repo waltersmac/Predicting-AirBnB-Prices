@@ -14,7 +14,7 @@ The purpose of this project is to understand and improve my knowledge of the CRI
 
 ### Technologies (Currently)
 * Python
-* Jupyter, Pandas, Numpy 
+* Jupyter, Pandas, Numpy, Matplotlib, scikit-learn
 
 ## Project Description
 I am currently exploring the London Airbnb data for 2020 and I have the following business questions:
