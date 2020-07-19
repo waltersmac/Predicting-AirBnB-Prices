@@ -37,8 +37,3 @@ In turn I will create a web blog to show my findings.
 - data processing/cleaning
 - statistical modeling
 - writeup/reporting
-
-## Getting Started
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](https://github.com/waltersmac/Data-Science-Blog/tree/master/Data) within this repo.
-3. Data processing/transformation notebook is being kept [here](https://github.com/waltersmac/Data-Science-Blog)
