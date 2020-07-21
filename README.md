@@ -4,7 +4,7 @@ This project is part of the Udacity - Data Science Nano-Degree.
 #### -- Project Status: [Active]
 
 ## Project Intro/Objective
-The purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
+For this project, I pick a dataset from the "Inside AirBnB" website. Using your dataset, I choose 3 questions that I aspired to answer from the data. Also, the purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
 
 ### Methods Used
 * Inferential Statistics
