@@ -27,8 +27,9 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
 
 **Question 3**
 - What features assist in predicting a price for any listing? 
-  - Is it possible to predict the score
-  - What are the importance of the features? Could the features be ranked?
+  - Is it possible to predict the score?
+  - What are the importance of the features? 
+  - Could the features be ranked?
 
 In turn I will create a web blog to show my findings.
 
