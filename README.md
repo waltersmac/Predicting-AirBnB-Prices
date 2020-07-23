@@ -31,7 +31,6 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
   - What are the importance of the features? 
   - Could the features be ranked?
 
-In turn I will create a web blog to show my findings.
 
 ## Needs of this project
 - data exploration/descriptive statistics
