@@ -1,5 +1,5 @@
 # Data Science Blog for London AirBNB 2020
-This project is part of the Udacity - Data Science Nano-Degree.
+
 
 #### -- Project Status: [Active]
 
