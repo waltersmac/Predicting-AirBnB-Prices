@@ -21,6 +21,7 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
 
 **Question 1**
 - What is the average price for the different location? 
+![Image of different locations](/Images/Neighbourhood_av_price_histogram_plots.png)
 
 **Question 2**
 - What types of verifications are hosts using? How long did it take them to respond?
