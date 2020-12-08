@@ -1,4 +1,4 @@
-![London_City](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/London_City.jpg)
+![London_City](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/London_City.jpg "London City")
 
 
 ## Project Intro
@@ -15,11 +15,11 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
 
 ##### Question 1
 - What is the average price for the different location?
-![Locations by Average Price](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/Neighbourhood_av_price_histogram_plots.png)
+![Locations by Average Price](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/Neighbourhood_av_price_histogram_plots.png "Locations by Average Price")
 
 ##### Question 2
 - What types of verifications are hosts using? How long did it take them to respond?
-![Locations by Average Price](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/Verification_type_price_histogram_plots.png)
+![Locations by Average Price](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/Verification_type_price_histogram_plots.png "Locations by Average Price")
 
 ##### Question 3
 - What features assist in predicting a price for any listing?
@@ -27,4 +27,4 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
   - What are the importance of the features?
   - Could the features be ranked?
 
-![Locations by Average Price](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/availability_365_prices_scatterplot.png)
+![Locations Map - Availabiltiy by Price](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/availability_365_prices_scatterplot.png "Locations Map - Availabiltiy by Price")
