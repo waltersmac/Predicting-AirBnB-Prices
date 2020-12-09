@@ -1,30 +1,32 @@
 ![London_City](Images/London.jpg)
 
 
-## Project Intro
-For this project, I pick a dataset from the "Inside AirBnB" website. Using your dataset, I choose 3 questions that I aspired to answer from the data. Also, the purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
+# **Advice to people thinking of advertising a property on Airbnb**
+As Airbnb has become increasingly popular and I wanted to investigate the underlying data and answer certain questions using this information. I decided to look at the investigation from a certain point of view, I wanted to see if there was anything that could help others in deciding whether to list their property or not. I wanted to select the most recent listings within 2020, even with the current situation facing London.
 
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
 
-## Project Description
-I am currently exploring the London Airbnb data for 2020 and I have the following business questions:
+## **Finding an acceptable price**
+My initial thoughts were to asks questions from a view of potentially renting a property/room. What is the average price for the different location? What types of verifications are hosts using? How long did it take them to respond? What features assist in predicting a price for any listing?
 
-##### Question 1
-- What is the average price for the different location?
+
+The first step that I took was to visualise the data from an a view on the London boroughs, was there any areas within london that were the most expensive? or was there more evenly spread of the prices.
+
+When initial viewing the London map, it shows that the majority of the prices that range from £111 to £223 are with the central/west which would presume that the borough of Westminster would be one of the most expensive. The lower prices have an evenly spread through out London which would confirm that these properties would be more affordable.   
+
+![Locations Map - Availability by Price](Images/availability_365_prices_scatterplot.png)
+
+Looking at the average price for the different boroughs shows that the City of London, Kensington and Chelsea, and also Westminster are the top 3 boroughs with the largest average price.
 ![Locations by Average Price](Images/Neighbourhood_av_price_histogram_plots.png)
 
-##### Question 2
-- What types of verifications are hosts using? How long did it take them to respond?
+##### What types of verifications are hosts using? How long did it take them to respond? Needs further investigation
 ![Locations by Average Price](Images/Verification_type_price_histogram_plots.png)
 
-##### Question 3
-- What features assist in predicting a price for any listing?
-  - Is it possible to predict the score?
-  - What are the importance of the features?
-  - Could the features be ranked?
 
-![Locations Map - Availabiltiy by Price](Images/availability_365_prices_scatterplot.png)
+## **Would it possible to predict the price?**
+With the data I wanted to see if there was a way of predicting a price, was there a machine learning model that could help? What features would assist in predicting a price for any listing?
+
+
+##### Place holder for the machine learning model findings
+
+
+## **Conclusion**
