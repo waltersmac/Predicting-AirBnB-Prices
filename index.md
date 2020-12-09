@@ -1,4 +1,4 @@
-![London_City](Images/London_City.jpg)
+![London_City](https://github.com/waltersmac/AirBnB-London-2020/blob/master/Images/London_City.jpg)
 
 
 ## Project Intro
