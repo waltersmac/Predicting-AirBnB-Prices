@@ -1,4 +1,4 @@
-![London_City](./Images/London_City.jpg)
+![London_City](Images/London_City.jpg)
 
 
 ## Project Intro
@@ -15,11 +15,11 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
 
 ##### Question 1
 - What is the average price for the different location?
-![Locations by Average Price](,/Images/Neighbourhood_av_price_histogram_plots.png)
+![Locations by Average Price](Images/Neighbourhood_av_price_histogram_plots.png)
 
 ##### Question 2
 - What types of verifications are hosts using? How long did it take them to respond?
-![Locations by Average Price](./Images/Verification_type_price_histogram_plots.png)
+![Locations by Average Price](Images/Verification_type_price_histogram_plots.png)
 
 ##### Question 3
 - What features assist in predicting a price for any listing?
@@ -27,4 +27,4 @@ I am currently exploring the London Airbnb data for 2020 and I have the followin
   - What are the importance of the features?
   - Could the features be ranked?
 
-![Locations Map - Availabiltiy by Price](./Images/availability_365_prices_scatterplot.png)
+![Locations Map - Availabiltiy by Price](Images/availability_365_prices_scatterplot.png)
