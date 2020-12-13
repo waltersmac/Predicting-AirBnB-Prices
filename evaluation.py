@@ -44,6 +44,24 @@ def evaluate_results(models, X, y):
     return results, names
     
     
+def run_eval(parameter_list, X, y):
+    
+    # get the models to evaluate
+    feat_models = get_models(parameter_list)
+    
+    #print("Evaluating the feature models")
+    eval_feat_models = evaluate_results(feat_models, X, y)
+    
+    return eval_feat_models
+
+
+def save_file(filename, eval_models):
+
+    open_file = open(filename, "wb")
+    pickle.dump(eval_models, open_file)
+    open_file.close()
+    
+    
 def main():
     
     df = process_data()
@@ -51,39 +69,32 @@ def main():
     X = df.drop('price', axis = 1)
     y = df['price']
     
+    # Evaluate the feature models
+    num_features = [10, 20, 30]
+
+    # Run eval for feature models
+    eval_feat_models = run_eval(num_features, X, y)
     
-    # evaluate the feature models and store results
-    num_features = [reound(X.shape[0]/3)]
+    # Store results for feature models
+    save_file("eval_feat_models.pkl", eval_feat_models)
 
-    # get the models to evaluate
-    feat_models = get_models(num_features)
     
-    #print("Evaluating the feature models")
-    eval_feat_models = evaluate_results(feat_models, X, y)
-
-    file_eval_feat_models = "eval_feat_models.pkl"
-    open_file = open(file_eval_feat_models, "wb")
-
-    pickle.dump(eval_feat_models, open_file)
-
-    open_file.close()
-
+    
     # evaluate the n_trees models and store results
-    #n_trees = [10, 20, 30, 40, 50]
- 
-    # get the models to evaluate
-    #n_trees_models = get_models(n_trees)
+    # n_trees = [10, 20, 30]
     
-    #print("evaluate the n_trees models")
-    #evaluate_results(n_trees_models, X, y)
+    # eval_tree_models = run_eval(n_trees, X, y)
+    
+    # save_file("eval_trees_models.pkl", eval_tree_models)
+    
     
     
     
     # evaluate the depth models and store results
-    #depths = [i for i in range(1,8)] + [None]
+    # depths = [i for i in range(1,8)] + [None]
  
-    # get the models to evaluate
-    #depths_models = get_models(depths)
+    #
+    # eval_depth_models = run_eval(depths, X, y)
     
-    #print("evaluate the depth models")
-    #evaluate_results(depths_models, X, y)
+    #
+    # save_file("eval_depth_models.pkl", eval_depth_models)
