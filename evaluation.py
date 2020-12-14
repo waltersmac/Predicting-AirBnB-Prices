@@ -19,8 +19,8 @@ def get_models(num_features):
     for i in num_features:
         models[str(i)] = RandomForestRegressor(max_features=i)
     return models
- 
-    
+
+
 # evaluate a given model using cross-validation
 def evaluate_model(model, X, y):
     # evaluate the model and collect the results
@@ -40,61 +40,69 @@ def evaluate_results(models, X, y):
         names.append(name)
         # summarize the performance along the way
         #print('>%s %.3f (%.3f)' % (name, mean(rmse_scores), std(rmse_scores)))
-        
+
     return results, names
-    
-    
+
+
 def run_eval(parameter_list, X, y):
-    
+
     # get the models to evaluate
     feat_models = get_models(parameter_list)
-    
+
     #print("Evaluating the feature models")
     eval_feat_models = evaluate_results(feat_models, X, y)
-    
+
     return eval_feat_models
 
+def save_file(filename, results):
+    # Create the results file inside the directory
+    with open(filename, 'wb') as f:
+        pickle.dump(results, f)
 
-def save_file(filename, eval_models):
+def rf_eval():
 
-    open_file = open(filename, "wb")
-    pickle.dump(eval_models, open_file)
-    open_file.close()
-    
-    
-def main():
-    
+    # Process and load data
     df = process_data()
-    
+
+    # data varibles
     X = df.drop('price', axis = 1)
     y = df['price']
-    
+
+
+    # Store results for feature models
+    # Create the directory if not exists
+    if not os.path.exists('eval_results'):
+        os.makedirs('eval_results')
+
+
     # Evaluate the feature models
     num_features = [10, 20, 30]
 
     # Run eval for feature models
     eval_feat_models = run_eval(num_features, X, y)
-    
-    # Store results for feature models
-    save_file("eval_feat_models.pkl", eval_feat_models)
 
-    
-    
+    # Create the results file inside the directory
+    save_file('eval_results/eval_feat_models.pickle', eval_feat_models)
+
+
     # evaluate the n_trees models and store results
-    # n_trees = [10, 20, 30]
-    
-    # eval_tree_models = run_eval(n_trees, X, y)
-    
-    # save_file("eval_trees_models.pkl", eval_tree_models)
-    
-    
-    
-    
+    n_trees = [10, 20, 30]
+
+    eval_tree_models = run_eval(n_trees, X, y)
+
+    # Create the results file inside the directory
+    save_file('eval_results/eval_tree_models.pickle', eval_tree_models)
+
+
     # evaluate the depth models and store results
-    # depths = [i for i in range(1,8)] + [None]
- 
-    #
-    # eval_depth_models = run_eval(depths, X, y)
-    
-    #
-    # save_file("eval_depth_models.pkl", eval_depth_models)
+    depths = [i for i in range(1,8)] + [None]
+
+    eval_depth_models = run_eval(depths, X, y)
+
+    # Create the results file inside the directory
+    save_file('eval_results/eval_depth_models.pickle', eval_depth_models)
+
+
+
+if __name__ == "__main__":
+    rf_eval()
