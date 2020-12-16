@@ -9,7 +9,7 @@ The first question I wanted to investigate was to do with the verifications of t
 
 <img src="Images/Verification_type_price_histogram_plots.png" alt="drawing"/>
 
-## **What types of amenities are hosts using? would they give a good review score?**
+## **Which types of amenities are hosts using? would they give a good review score?**
 
 <img src="Images/top_amenities.png" alt="drawing" height = 500 width="250"/>
 
