@@ -11,7 +11,7 @@ The first question I wanted to investigate was to do with the verifications of t
 
 ## **Which types of amenities are hosts using? would they give a good review score?**
 
-<img src="Images/top_amenities.png" alt="drawing" height = 500 width="250"/>
+<img src="Images/top_amenities.png" alt="drawing" height = 500 width="500"/>
 
 ## **Deciding on an acceptable price**
 My initial thoughts were to asks questions from a view of potentially renting a property/room. What is the average price for the different location? What types of verifications are hosts using? How long did it take them to respond? What features assist in predicting a price for any listing?
