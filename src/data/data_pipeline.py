@@ -96,7 +96,7 @@ def drop_columns(df_listings):
 def process_data():
 
     # Read in data from CSV
-    df_listings = pd.read_csv('/Data/listings.csv', dtype={'listing_url': 'object',
+    df_listings = pd.read_csv('../external/listings.csv', dtype={'listing_url': 'object',
                                                       'price': 'object',
                                                       'weekly_price': 'object',
                                                       'monthly_price': 'object',
