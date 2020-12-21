@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.pipeline import Pipeline
 
-from data_pipeline import process_data
+from src.data.data_pipeline import process_data
 
 
 def load_data():
@@ -60,7 +60,7 @@ def run_pipeline():
     X, y = load_data() # run ETL pipeline
     model = build_model()  # build model pipeline
     model = train(X, y, model)  # train model pipeline
-    export_model(model, 'final_model.pickle')  # save model
+    export_model(model, '/Users/rob_walters/Documents/Github/AirBnB-London-2020/models/final_model.pickle')  # save model
 
 
 if __name__ == '__main__':

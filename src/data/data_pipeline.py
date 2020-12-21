@@ -95,16 +95,18 @@ def drop_columns(df_listings):
 
 def process_data():
 
+    file_csv = '/Users/rob_walters/Documents/Github/AirBnB-London-2020/data/external/listings.csv'
+
     # Read in data from CSV
-    df_listings = pd.read_csv('../external/listings.csv', dtype={'listing_url': 'object',
-                                                      'price': 'object',
-                                                      'weekly_price': 'object',
-                                                      'monthly_price': 'object',
-                                                      'security_deposit': 'object',
-                                                      'cleaning_fee': 'object',
-                                                      'extra_people': 'object',
-                                                      'license': 'object',
-                                                      'jurisdiction_names': 'object',})
+    df_listings = pd.read_csv(file_csv, dtype={'listing_url': 'object',
+                                                     'price': 'object',
+                                                     'weekly_price': 'object',
+                                                     'monthly_price': 'object',
+                                                     'security_deposit': 'object',
+                                                     'cleaning_fee': 'object',
+                                                     'extra_people': 'object',
+                                                     'license': 'object',
+                                                     'jurisdiction_names': 'object',})
 
     # Formating the data
     float_list = ['price','security_deposit','cleaning_fee','extra_people']

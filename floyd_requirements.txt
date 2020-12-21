@@ -1,0 +1,2 @@
+# Install setup.py
+pip install .
