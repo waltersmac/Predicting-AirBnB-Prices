@@ -92,5 +92,4 @@ target/
 .floydignore
 floyd.yml
 .floyddata
-
-# GitHub
+floyd_ignore
