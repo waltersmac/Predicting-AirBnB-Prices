@@ -95,8 +95,6 @@ def drop_columns(df_listings):
 
 def process_data():
 
-    file_csv = '/Users/rob_walters/Documents/Github/AirBnB-London-2020/data/external/listings.csv'
-
     # Read in data from CSV
     df_listings = pd.read_csv(file_csv, dtype={'listing_url': 'object',
                                                      'price': 'object',
