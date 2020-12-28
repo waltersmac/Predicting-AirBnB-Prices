@@ -5,7 +5,7 @@ from pathlib import Path
 # from dotenv import find_dotenv, load_dotenv
 
 import pandas as pd
-import data_pipeline
+from data_pipeline import process_data
 
 
 @click.command()
@@ -18,8 +18,8 @@ def main(input_filepath, output_filepath):
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
 
-    clean_data = data_pipeline(input_filepath)
-    clean_data.to_csv(output_filepath)
+    clean_data = process_data(input_filepath + '/listings.csv')
+    clean_data.to_csv(output_filepath + '/df_listings.csv')
 
 
 if __name__ == '__main__':
