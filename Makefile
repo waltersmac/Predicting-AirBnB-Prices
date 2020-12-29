@@ -80,6 +80,9 @@ test_environment:
 # PROJECT RULES                                                                 #
 #################################################################################
 
+## Make best model
+train:
+	$(PYTHON_INTERPRETER) src/models/make_train.py data/processed/ models/
 
 
 #################################################################################

@@ -9,9 +9,8 @@ from sklearn.pipeline import Pipeline
 from src.data.data_pipeline import process_data
 
 
-def load_data():
+def load_data(df):
     # Process and load data
-    df = process_data()
 
     # data varibles
     X = df.drop('price', axis = 1)
@@ -55,13 +54,9 @@ def export_model(model, filename):
         pickle.dump(model, f)
 
 
-def run_pipeline():
+def run_pipeline(df_csv, output_location):
     # Process and load data
-    X, y = load_data() # run ETL pipeline
+    X, y = load_data(df_csv) # run ETL pipeline
     model = build_model()  # build model pipeline
     model = train(X, y, model)  # train model pipeline
-    export_model(model, '/Users/rob_walters/Documents/Github/AirBnB-London-2020/models/final_model.pickle')  # save model
-
-
-if __name__ == '__main__':
-    run_pipeline()  # run data pipeline
+    export_model(model, output_location + 'final_model.pickle')  # save model
