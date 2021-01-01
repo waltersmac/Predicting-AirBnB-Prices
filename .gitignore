@@ -93,3 +93,4 @@ target/
 floyd.yml
 .floyddata
 floyd_ignore
+floyd_requirements.txt
