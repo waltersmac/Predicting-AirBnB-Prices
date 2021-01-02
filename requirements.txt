@@ -3,6 +3,7 @@
 
 # external requirements
 sklearn
+pickle
 click
 coverage
 flake8
