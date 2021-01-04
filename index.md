@@ -4,12 +4,12 @@
 As Airbnb has become increasingly popular, I wanted to investigate the underlying data around the listings of the different properties within London and try to answer certain questions that could benefit both Airbnb and potential owners. I decided to look at the investigation from a certain point of view, I wanted to see if there was anything that could help the property owners in deciding whether to list their property and what could help in getting the best possible price. I wanted to select the most recent listings within 2020, even with the current situation facing London.
 
 
-## **What types of verifications are hosts using? How long did it take them to respond?**
+## **What types of verifications are hosts using?**
 Looking at the types verifications I want to see what the different types were and how many were associated with the listings. The data seems to show that phone calls, emails and government id were the top 3. About 70% of the listings had government id as one of the verifications and in my mind that would be a suitable, especially if your letting someone into your property that you do not know.
 
 <img src="reports/figures/Verification_type_price_histogram_plots.png" alt="drawing"/>
 
-## **Which types of amenities are hosts using? would they give a good review score?**
+## **Which types of amenities are hosts using? Would they give a good review score?**
 Now with amenities these are the items that you would hope would make a guest enjoy their stay and in turn give you an outstanding review. The table below shows the amenities by the count of listings where the word was seen and then the min, max and average review value. The top 20 amenities seem to show that luxuries certainly does help with the average review and having the option for allowing pets i.e. dogs also helps.
 
 <img src="reports/figures/top_amenities.png" alt="drawing" height = 500 width="500"/>
