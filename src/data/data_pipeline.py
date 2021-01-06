@@ -137,7 +137,7 @@ def process_data(file_csv):
 
 
     # Removing rows that do not have a price
-    df = df_listings.dropna(subset=["price"])
+    df = df_listings[df_listings["price"] != 0]
 
 
     # Dummy the categorical variables

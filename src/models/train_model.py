@@ -27,7 +27,7 @@ def build_model():
 
     # define parameters for GridSearchCV
     params = {
-        'rfr__n_estimators': [100, 200, 300, 400, 500],
+        'rfr__n_estimators': [1000],
         'rfr__max_depth': [1,2,3,4,5,10,20,50,100] + [None],
         'rfr__max_features': ['auto', None, 'sqrt', 'log2', 0.7, 0.2]
     }
