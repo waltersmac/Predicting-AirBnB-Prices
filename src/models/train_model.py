@@ -12,11 +12,15 @@ from src.data.data_pipeline import process_data
 def load_data(df):
     # Process and load data
 
-    # data varibles
-    X = df.drop('price', axis = 1)
-    y = df['price']
+    # Extract features and labels
+    features = df.drop('price', axis = 1)
+    labels = df['price']
 
-    return X, y
+    # Convert to numpy arrays
+    features = np.array(features)
+    labels = np.array(labels)
+
+    return features, labels
 
 
 def build_model():
@@ -38,12 +42,12 @@ def build_model():
     return model_pipeline
 
 
-def train(X, y, model):
+def train(features, labels, model):
     # train test split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state=42)
+    features_train, features_test, labels_train, labels_test = train_test_split(features, labels, test_size = 0.2, random_state=42)
 
     # fit model
-    model.fit(X_train, y_train)
+    model.fit(features_train, labels_train)
 
     return model
 
@@ -56,7 +60,7 @@ def export_model(model, filename):
 
 def run_pipeline(df_csv, output_location):
     # Process and load data
-    X, y = load_data(df_csv) # run ETL pipeline
+    features, labels = load_data(df_csv) # run ETL pipeline
     model = build_model()  # build model pipeline
-    model = train(X, y, model)  # train model pipeline
+    model = train(features, labels, model)  # train model pipeline
     export_model(model, output_location + 'final_model.pickle')  # save model

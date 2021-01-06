@@ -1,9 +1,11 @@
 # local package
 -e .
+geopandas
+descartes
+dataframe_image
 
 # external requirements
 sklearn
-pickle
 click
 coverage
 flake8
