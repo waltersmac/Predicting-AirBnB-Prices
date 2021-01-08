@@ -38,7 +38,7 @@ def build_model():
     }
 
     # create gridsearch object and return as final model pipeline
-    model_pipeline = GridSearchCV(pipeline, param_grid=params, scoring='neg_mean_squared_error', cv=3, n_jobs=-1)
+    model_pipeline = GridSearchCV(pipeline, param_grid=params, scoring='neg_mean_squared_error', cv=10, n_jobs=-1, random_state=42)
 
     return model_pipeline
 
