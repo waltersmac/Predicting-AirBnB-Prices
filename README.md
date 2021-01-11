@@ -71,3 +71,5 @@ Project Organization
 ## Project Description
 I am currently exploring the London Airbnb data for 2020 and I have the following business questions:
 ["London AirBnB - Blog"](https://waltersmac.github.io/AirBnB-London-2020/)
+
+**To be completed**
