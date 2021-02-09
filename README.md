@@ -2,11 +2,11 @@
 
 #### -- Project Status: [Active]
 
-## Project Intro/Objective
-For this project, I pick London 2020 dataset from the ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) website. Using this dataset, I choose to answer 3 questions that I aspired to answer. Also, the purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
+## Project Objective
+For this project I decided to pick the AirBnbB data for London in 2019 ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) website. Using this dataset, I choose to answer 3 questions that I aspired to answer. Also, the purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
 
 
-Project Organization
+Project Organisation
 ------------
 
     ├── LICENSE
@@ -61,7 +61,7 @@ Project Organization
 ### Methods Used
 * Inferential Statistics
 * Machine Learning
-* Data Visualization
+* Data Visualisation
 * Predictive Modeling
 
 ### Technologies
