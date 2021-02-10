@@ -3,7 +3,7 @@
 #### -- Project Status: [Active]
 
 ## Project Objective
-For this project I decided to pick the AirBnbB data for London in 2019 ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) website. Using this dataset, I choose to answer 3 questions that I aspired to answer. Also, the purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
+For this project I decided to pick the AirBnbB data for London in 2020 ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) website. Using this dataset, I choose to answer 3 questions that I aspired to answer. Also, the purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
 
 
 Project Organisation
