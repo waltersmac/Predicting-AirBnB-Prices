@@ -16,7 +16,7 @@ def main(input_filepath, output_filepath):
         cleaned data ready to be analyzed (saved in ../processed).
     """
     logger = logging.getLogger(__name__)
-    logger.info('making final data set from raw data')
+    logger.info('Processing data set from raw data')
 
     clean_data = process_data(input_filepath + '/listings.csv')
     clean_data.to_csv(output_filepath + '/df_listings.csv')
