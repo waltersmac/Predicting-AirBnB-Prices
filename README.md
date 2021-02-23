@@ -3,7 +3,12 @@
 #### -- Project Status: [Active]
 
 ## Project Objective
-For this project I decided to pick the AirBnbB data for London in 2020 ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) website. Using this dataset, I choose to answer 3 questions that I aspired to answer. Also, the purpose of this project is to understand and improve my knowledge of the CRISP-DM process.
+For this project I decided to analyse the AirBnbB data for London in 2020 ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) website. Using this dataset, I want to look into business questions that I could answer for the owners of the properties, that were trying to decided how to best list their property.
+
+
+### Technologies
+* Python
+* Jupyter, Pandas, Numpy, Matplotlib, scikit-learn
 
 
 Project Organisation
@@ -57,14 +62,3 @@ Project Organisation
 
 
 --------
-
-
-### Technologies
-* Python
-* Jupyter, Pandas, Numpy, Matplotlib, scikit-learn
-
-## Project Description
-I am currently exploring the London Airbnb data for 2020 and I have the following business questions:
-["London AirBnB - Blog"](https://waltersmac.github.io/AirBnB-London-2020/)
-
-**To be completed**
