@@ -35,4 +35,5 @@ With my final investigation I wanted to see if i could predict the price of a li
 
 I found that with my prediction model could predict prices with plus or minus £30 difference from the actual price. The following diagram shows the top features that the landlord would need to focus on to ensure the best price for them:
 
--- add diagram --  
+
+-- add diagram ---
