@@ -22,6 +22,9 @@ def main(input_filepath, output_filepath):
 
     run_pipeline(file_csv, output_filepath)
 
+    feature_data = process_data(input_filepath + '/df_listings.pkl')
+    feature_data.to_pickle(output_filepath + '/df_listings.pkl')
+
 
 if __name__ == '__main__':
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'

@@ -1,13 +1,17 @@
 import os
+import sys
 import pickle
 import numpy as np
+import pandas as pd
 
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import GridSearchCV, train_test_split
+
+import xgboost as xgb
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.metrics import mean_squared_error
 from sklearn.pipeline import Pipeline
-
-from src.data.data_pipeline import process_data
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder
 
 
 def load_data(df):
@@ -25,22 +29,29 @@ def load_data(df):
 
 
 def build_model():
-    # Scaler and model pipeline
-    pipeline = Pipeline([
-        ('rfr', RandomForestRegressor())
-    ])
+
+    xgb1 = xgb.XGBRegressor()
 
     # define parameters for GridSearchCV
-    params = {
-        'rfr__n_estimators': [1000],
-        'rfr__max_depth': [1,2,3,4,5,10,20,50,100] + [None],
-        'rfr__max_features': ['auto', None, 'sqrt', 'log2', 0.7, 0.2]
-    }
+    parameters = {'nthread':[4],
+                  'objective':['reg:squarederror'],
+                  'learning_rate': [.03, 0.05, .07],
+                  'max_depth': [7, 8, 9],
+                  'min_child_weight': [4],
+                  'silent': [1],
+                  'subsample': [0.7],
+                  'colsample_bytree': [0.7],
+                  'n_estimators': [500]}
 
     # create gridsearch object and return as final model pipeline
-    model_pipeline = GridSearchCV(pipeline, param_grid=params, scoring='neg_mean_squared_error', cv=10, n_jobs=-1, random_state=42)
+    xgb_grid = GridSearchCV(xgb1,
+                        parameters,
+                        cv = 5,
+                        n_jobs = 5,
+                        verbose=True)
 
-    return model_pipeline
+
+    return xgb_grid
 
 
 def train(features, labels, model):
