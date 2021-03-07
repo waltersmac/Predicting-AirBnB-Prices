@@ -1,15 +1,21 @@
-# Creating a Data Science Blog for London AirBnB 2020
+# Predicting London AirBnB Prices
 
 <kbd> <img src="reports/figures/London.jpg" alt="drawing"/> </kbd>
 
 **Project Objective:** In this project I explored the processing and prediction the listings from ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) for London in 2020. I want to look into various business questions that I could answer for the owners of the properties which in turn would assist Airbnb in obtaining more revenue.
 
 ## 1. Exploratory Data Analysis
-  * Basic Statistics
-  * Data exploration
-  * Removing outliers
+Refer to the following data exploration notebook [here](https://github.com/waltersmac/AirBnB-London-2020/blob/master/notebooks/1.0-rw-data-exploration.ipynb)
+  * Variable Identification
+  * Univariate Analysis
+  * Bi-variate Analysis
+  * Missing values treatment
+  * Outlier treatment
+  * Variable transformation
+  * Variable creation
 
 ## 2. Business Questions
+Refer to the following business questions notebook [here](https://github.com/waltersmac/AirBnB-London-2020/blob/master/notebooks/1.0-rw-business-questions.ipynb) <br>
 Explored the listings and tried to answer the following:
   * What types of verifications are hosts using?
   * Which types of amenities are hosts using? Would they give a good review score?
@@ -17,6 +23,7 @@ Explored the listings and tried to answer the following:
   * What could be the most important to the price?
 
 ## 3. Predictive Model Evaluation
+Refer to the following Model Evaluation notebook [here](https://github.com/waltersmac/AirBnB-London-2020/blob/master/notebooks/1.0-rw-model-exploration.ipynbM) <br>
 The following steps were applied in order to obtain the best results using “Extreme Gradient Boosting” Regressor (XGBoost) algorithm:
   * Manual Feature Selection
   * Feature Engineering
@@ -25,10 +32,10 @@ The following steps were applied in order to obtain the best results using “Ex
   * GridSearchCV
   * Feature Importance
 
-## 4. Web Blog
-  * Created a page within Github and using the "Dinky theme" built in theme
+## 4. Data Science Blog
+Link to the webpage [here ](https://waltersmac.github.io/AirBnB-London-2020) <br>
   * Communicated my findings from the business questions
-  * Link to the blog [here ](https://waltersmac.github.io/AirBnB-London-2020) <br>
+  * Created a page within Github and using the "Dinky theme" built in theme
 
 
 ## 5. Project Organisation
