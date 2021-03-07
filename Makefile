@@ -29,6 +29,14 @@ requirements: test_environment
 data: requirements
 	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/interim
 
+## Make features
+features:
+	$(PYTHON_INTERPRETER) src/features/make_feature.py data/interim data/processed
+
+## Make best model
+train:
+	$(PYTHON_INTERPRETER) src/models/make_train.py data/processed/ models/
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
@@ -64,9 +72,6 @@ test_environment:
 # PROJECT RULES                                                                 #
 #################################################################################
 
-## Make best model
-train:
-	$(PYTHON_INTERPRETER) src/models/make_train.py data/processed/ models/
 
 
 #################################################################################
