@@ -5,7 +5,7 @@ As Airbnb has become increasingly popular, I wanted to investigate the underlyin
 
 
 ## **What types of verifications are hosts using?**
-Looking at the types verifications I want to see what the different types were and how many were associated with the listings. The data seems to show that phone calls, emails and government id were the top 3. About 70% of the listings had government id as one of the verifications and in my mind that would be a suitable, especially if your letting someone into your property that you do not know.
+Looking at the types verifications I want to see what the different types were and how many were associated with the listings. The data seems to show that phone calls, emails and government id were the top 3. About 70% of the listings had a government id as one of the verifications and in my mind that would be a suitable, especially if your letting someone into your property that you do not know.
 
 <img src="reports/figures/Verification_type_price_histogram_plots.png" alt="drawing"/>
 
@@ -31,7 +31,9 @@ With the data I wanted to see if there was a way of predicting a price, was ther
 
 
 ## **What could be the most important to the price?**
-Thinking of feature selection
+With my final investigation I wanted to see if i could predict the price of a listing for a night, what would be the minimal difference between the actual price and the prediction? Would would be the features of importance that could have an impact and could this help the potential landlords?
+
+I found that with my prediction model could predict prices with plus or minus £30 difference from the actual price. The following diagram shows the top features that the landlord would need to focus on to ensure the best price for them:
 
 
-## **Conclusion**
+-- add diagram ---
