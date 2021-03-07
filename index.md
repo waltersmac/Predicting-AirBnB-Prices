@@ -12,14 +12,14 @@ Looking at the security verifications I want to see what the different types wer
 ## **Which types of amenities are hosts using? Would they give a good review score?**
 Now with amenities these are the items that you would hope would make a guest enjoy their stay and in turn give you an outstanding review. The table below shows the amenities by the count of listings where the word was seen and then the minimum, maximum and average review value. The top 20 amenities seem to show that luxuries certainly does help with the average review and having the option for allowing pets i.e. dogs also helps.
 
-<kbd><img src="reports/figures/top_amenities.png" alt="drawing" height = 500 width="500"/></kbd>
+<kbd> <img src="reports/figures/top_amenities.png" alt="drawing" height = 500 width="500"/> </kbd>
 
 ## **What could possibly an acceptable price?**
 My first thoughts with the price was to look at the data from a view of the London boroughs, was there any areas within london that were the most expensive? or was there more evenly spread of the prices.
 
 When initially viewing the London map, it shows that the majority of the prices that range from £111 to £223 are with the central/west which would presume that the borough of Westminster would be one of the most expensive. The lower prices have an evenly spread through out London which would confirm that these properties would be more affordable.   
 
-<img src="reports/figures/availability_365_prices_scatterplot.png" alt="drawing"/>
+<kbd> <img src="reports/figures/availability_365_prices_scatterplot.png" alt="drawing"/> </kbd>
 
 The average price for the different boroughs shows that the City of London, Kensington and Chelsea, and also Westminster are the top 3 boroughs with the largest average price.
 
