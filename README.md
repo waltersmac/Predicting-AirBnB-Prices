@@ -33,7 +33,7 @@ The following steps were applied in order to obtain the best results using “Ex
   * Feature Importance
 
 ## 4. Data Science Blog
-Link to the webpage [here ](https://waltersmac.github.io/AirBnB-London-2020) <br>
+Link to the webpage [here ](https://waltersmac.github.io/Predicting-AirBnB-Prices/) <br>
   * Communicated my findings from the business questions
   * Created a page within Github and using the "Dinky theme" built in theme
 
