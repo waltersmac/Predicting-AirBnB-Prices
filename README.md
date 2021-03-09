@@ -5,7 +5,7 @@
 **Project Objective:** In this project I explored the processing and prediction the listings from ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) for London in 2020. I want to look into various business questions that I could answer for the owners of the properties which in turn would assist Airbnb in obtaining more revenue.
 
 ## 1. Business Understanding
-Link for notebook is [here](https://github.com/waltersmac/Predicting-AirBnB-Prices/blob/master/notebooks/1.0-rw-data-exploration.ipynb)
+Link for notebook is [here](https://github.com/waltersmac/Predicting-AirBnB-Prices/blob/master/notebooks/1.0-rw-data-exploration.ipynb) <br/><br/>
 Explored the listings and tried to answer the following:
   * What types of verifications are hosts using?
   * Which types of amenities are hosts using? Would they give a good review score?
@@ -28,7 +28,7 @@ The following steps were taken to find the data needed for the prediction model:
   * Feature Engineering
 
 ## 3. Predictive Model Evaluation
-Link for notebook is [here](https://github.com/waltersmac/Predicting-AirBnB-Prices/blob/master/notebooks/1.0-rw-model-exploration.ipynb)
+Link for notebook is [here](https://github.com/waltersmac/Predicting-AirBnB-Prices/blob/master/notebooks/1.0-rw-model-exploration.ipynb) <br/><br/>
 The following steps were applied in order to obtain the best results using “Extreme Gradient Boosting” Regressor (XGBoost) algorithm:
   * Base Model Evaluation
   * Cross-Validation
