@@ -4,8 +4,15 @@
 
 **Project Objective:** In this project I explored the processing and prediction the listings from ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) for London in 2020. I want to look into various business questions that I could answer for the owners of the properties which in turn would assist Airbnb in obtaining more revenue.
 
-## 1. Exploratory Data Analysis
-Refer to the following data exploration notebook [here](https://github.com/waltersmac/AirBnB-London-2020/blob/master/notebooks/1.0-rw-data-exploration.ipynb)
+## 1. Business Understanding
+Explored the listings and tried to answer the following:
+  * What types of verifications are hosts using?
+  * Which types of amenities are hosts using? Would they give a good review score?
+  * What could possibly an acceptable price?
+  * What could be the most important to the price?
+
+## 2. Data Understanding
+I explored the AirBnB listsing using the following tasks:
   * Variable Identification
   * Univariate Analysis
   * Bi-variate Analysis
@@ -14,23 +21,17 @@ Refer to the following data exploration notebook [here](https://github.com/walte
   * Variable transformation
   * Variable creation
 
-## 2. Business Questions
-Refer to the following business questions notebook [here](https://github.com/waltersmac/AirBnB-London-2020/blob/master/notebooks/1.0-rw-business-questions.ipynb) <br>
-Explored the listings and tried to answer the following:
-  * What types of verifications are hosts using?
-  * Which types of amenities are hosts using? Would they give a good review score?
-  * What could possibly an acceptable price?
-  * What could be the most important to the price?
-
-## 3. Predictive Model Evaluation
-Refer to the following Model Evaluation notebook [here](https://github.com/waltersmac/AirBnB-London-2020/blob/master/notebooks/1.0-rw-model-exploration.ipynbM) <br>
-The following steps were applied in order to obtain the best results using “Extreme Gradient Boosting” Regressor (XGBoost) algorithm:
+## 3. Prepared Data
+The following steps were taken to find the data needed for the prediction model:
   * Manual Feature Selection
   * Feature Engineering
+
+## 3. Predictive Model Evaluation
+The following steps were applied in order to obtain the best results using “Extreme Gradient Boosting” Regressor (XGBoost) algorithm:
   * Base Model Evaluation
   * Cross-Validation
-  * GridSearchCV
-  * Feature Importance
+  * GridSearchCV Evaluation
+  * Plotting and find top 10 Feature Importance scores
 
 ## 4. Data Science Blog
 Link to the webpage [here ](https://waltersmac.github.io/Predicting-AirBnB-Prices/) <br>
@@ -84,3 +85,5 @@ Link to the webpage [here ](https://waltersmac.github.io/Predicting-AirBnB-Price
 
 ## Resources Used for This Project
   * Udacity Data Science Nanodegree: [here](https://www.udacity.com/course/data-scientist-nanodegree--nd025) <br>
+  * Sklearn [here](https://scikit-learn.org/stable/)
+  * XGBoost Algorithm [here](https://xgboost.readthedocs.io/en/latest/#)
