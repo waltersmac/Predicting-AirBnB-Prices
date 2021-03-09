@@ -5,6 +5,7 @@
 **Project Objective:** In this project I explored the processing and prediction the listings from ["Inside AirBnB"](http://insideairbnb.com/get-the-data.html) for London in 2020. I want to look into various business questions that I could answer for the owners of the properties which in turn would assist Airbnb in obtaining more revenue.
 
 ## 1. Business Understanding
+Link for notebook is [here](https://github.com/waltersmac/Predicting-AirBnB-Prices/blob/master/notebooks/1.0-rw-data-exploration.ipynb)
 Explored the listings and tried to answer the following:
   * What types of verifications are hosts using?
   * Which types of amenities are hosts using? Would they give a good review score?
@@ -27,6 +28,7 @@ The following steps were taken to find the data needed for the prediction model:
   * Feature Engineering
 
 ## 3. Predictive Model Evaluation
+Link for notebook is [here](https://github.com/waltersmac/Predicting-AirBnB-Prices/blob/master/notebooks/1.0-rw-model-exploration.ipynb)
 The following steps were applied in order to obtain the best results using “Extreme Gradient Boosting” Regressor (XGBoost) algorithm:
   * Base Model Evaluation
   * Cross-Validation
@@ -87,3 +89,4 @@ Link to the webpage [here ](https://waltersmac.github.io/Predicting-AirBnB-Price
   * Udacity Data Science Nanodegree: [here](https://www.udacity.com/course/data-scientist-nanodegree--nd025) <br>
   * Sklearn [here](https://scikit-learn.org/stable/)
   * XGBoost Algorithm [here](https://xgboost.readthedocs.io/en/latest/#)
+  * <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
